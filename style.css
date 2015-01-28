@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+  font-family: helvetica;
+}
+
+header {
+  float: right;
+  color: #999;
+  margin-right: 20%;
+  position: relative;
+  height: 50px;
+}
+
+#nick {
+  position: absolute;
+  z-index: 10;
+  margin-top: -10px;
+}
+ 
+#name {
+  opacity: .1;
+  margin-top: -10px;
+}
