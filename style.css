@@ -3,7 +3,6 @@
 body {
   font-family: helvetica;
 }
-
 header {
   float: right;
   color: #999;
@@ -11,14 +10,66 @@ header {
   position: relative;
   height: 50px;
 }
-
 #nick {
   position: absolute;
   z-index: 10;
   margin-top: -10px;
 }
- 
 #name {
   opacity: .1;
   margin-top: -10px;
+}
+#holder {
+  margin: 20px auto;
+  width: 601px;
+  height:400px;
+}
+.door {
+  height:398px;
+  width:300px;
+  position: absolute;
+  margin-top: 1px;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 2px 2px 26px 4px rgba(0,0,0,0);
+  transform: scale(1);
+  transition: .3s .45s;
+}
+#left{
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 15px;
+  margin-left: 1px;
+  -webkit-transform-origin: right;
+  transition: .75s;
+}
+#right{
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  margin-left: 302px;
+  -webkit-transform-origin: left;
+  transition: .75s;
+}
+#holder:hover .door{
+  transform: scale(1.05);
+  box-shadow: 2px 2px 36px 4px rgba(0,0,0,.61);
+  transition: .3s;
+}
+#holder:hover #left{
+  margin-left: -280px;
+  transition: .75s;
+}
+#holder:hover #right{
+  margin-left: 582px;
+  transition: .75s;
+}
+.room {
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  position: absolute;
+  height:400px;
+  width:603px;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 2px 2px 26px 4px rgba(0,0,0,.4);
+  -moz-box-shadow: inset 2px 2px 26px 4px rgba(0,0,0,.4);
+  box-shadow: inset 2px 2px 46px 1px rgba(0,0,0,.6);
 }
