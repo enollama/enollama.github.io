@@ -47,6 +47,8 @@ header {
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
   margin-left: 1px;
+  -o-transform-origin: right;
+  -ms-transform-origin: right;
   -moz-transform-origin: right;
   -webkit-transform-origin: right;
   transition: .45s;
@@ -56,6 +58,8 @@ header {
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
   margin-left: 451px;
+  -o-transform-origin: left;
+  -ms-transform-origin: left;
   -moz-transform-origin: left;
   -webkit-transform-origin: left;
   transition: .45s;
@@ -63,6 +67,8 @@ header {
 
 #left1 {
   margin-left: 151px;
+  -o-transform-origin: right;
+  -ms-transform-origin: right;
   -moz-transform-origin: right;
   -webkit-transform-origin: right;
   transition: .45s;
@@ -70,6 +76,8 @@ header {
 
 #right1 {
   margin-left: 301px;
+  -o-transform-origin: left;
+  -ms-transform-origin: left;
   -moz-transform-origin: left;
   -webkit-transform-origin: left;
   transition: .45s;
