@@ -1,14 +1,13 @@
 @charset "UTF-8";
-
 body {
   font-family: helvetica;
   font-size: 10px;
-  background-color: rgba(225,225,225,1);
+  background-color: rgba(225, 225, 225, 1);
 }
 
 header {
   float: left;
-  color: rgba(200,200,200,1);
+  color: rgba(200, 200, 200, 1);
   position: relative;
   height: 50px;
 }
@@ -19,7 +18,7 @@ header {
   margin-top: -5px;
   margin-left: 10px
 }
- 
+
 #name {
   opacity: .1;
   margin-top: -5px;
@@ -29,77 +28,99 @@ header {
 #holder {
   margin: 100px auto;
   width: 601px;
-  height:320px;
+  height: 320px;
 }
+
 .door {
-  height:318px;
-  width:150px;
+  height: 318px;
+  width: 150px;
   position: absolute;
   margin-top: 1px;
   z-index: 10;
-  box-shadow: 2px 2px 36px 4px rgba(100,100,100,0.01);
-  background-color: rgba(225,225,225,.9);
+  box-shadow: 2px 2px 36px 4px rgba(100, 100, 100, 0.01);
+  background-color: rgba(225, 225, 225, .9);
   transform: scale(1);
   transition: .1s ease-in-out .45s;
 }
 
-#left{
+#left {
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
   margin-left: 1px;
+  -o-transform-origin: right;
+  -ms-transform-origin: right;
+  -moz-transform-origin: right;
   -webkit-transform-origin: right;
   transition: .45s;
 }
-#right{
+
+#right {
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
   margin-left: 451px;
+  -o-transform-origin: left;
+  -ms-transform-origin: left;
+  -moz-transform-origin: left;
   -webkit-transform-origin: left;
   transition: .45s;
 }
-#left1{
+
+#left1 {
   margin-left: 151px;
+  -o-transform-origin: right;
+  -ms-transform-origin: right;
+  -moz-transform-origin: right;
   -webkit-transform-origin: right;
   transition: .45s;
 }
-#right1{
+
+#right1 {
   margin-left: 301px;
+  -o-transform-origin: left;
+  -ms-transform-origin: left;
+  -moz-transform-origin: left;
   -webkit-transform-origin: left;
   transition: .45s;
 }
-#holder:hover .door{
+
+#holder:hover .door {
   transform: scale(1.04);
-  box-shadow: 2px 2px 36px 4px rgba(0,0,0,.71);
+  box-shadow: 2px 2px 36px 4px rgba(0, 0, 0, .71);
   transition: .01s ease-in-out;
 }
-#holder:hover #left{
+
+#holder:hover #left {
   margin-left: -170px;
   opacity: 0.1;
   transition: .75s .04s;
 }
-#holder:hover #left1{
+
+#holder:hover #left1 {
   margin-left: -150px;
-    opacity: 0.1;
+  opacity: 0.1;
   transition: .75s;
 }
-#holder:hover #right{
+
+#holder:hover #right {
   margin-left: 622px;
   opacity: 0.1;
   transition: .75s .04s;
 }
-#holder:hover #right1{
-    opacity: 0.1;
+
+#holder:hover #right1 {
+  opacity: 0.1;
   margin-left: 602px;
   transition: .75s;
 }
+
 .room {
   margin: 0 auto;
-  background-color: rgba(210,210,210,1);
+  background-color: rgba(210, 210, 210, 1);
   position: absolute;
-  height:320px;
-  width:602px;
+  height: 320px;
+  width: 602px;
   border-radius: 15px;
-  -webkit-box-shadow: inset 2px 2px 26px 4px rgba(0,0,0,.4);
-  -moz-box-shadow: inset 2px 2px 26px 4px rgba(0,0,0,.4);
-  box-shadow: inset 2px 2px 20px 1px rgba(0,0,0,.3);
+  -webkit-box-shadow: inset 2px 2px 26px 4px rgba(0, 0, 0, .4);
+  -moz-box-shadow: inset 2px 2px 26px 4px rgba(0, 0, 0, .4);
+  box-shadow: inset 2px 2px 20px 1px rgba(0, 0, 0, .3);
 }
